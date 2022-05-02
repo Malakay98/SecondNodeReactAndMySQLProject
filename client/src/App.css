@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50%;
+  width: 40%;
+  color: linear-gradient(180deg,#00d0ff 0,#2eff43);
+  background-position: center;
+  background-blend-mode: multiply;
+  animation: c .7s infinite alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes c{
+  0%{
+    -webkit-filter:hue-rotate(0deg)
+  }
+  50%{
+    -webkit-filter:hue-rotate(90deg)
+  }
+  to {
+    -webkit-filter:hue-rotate(0deg)
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
